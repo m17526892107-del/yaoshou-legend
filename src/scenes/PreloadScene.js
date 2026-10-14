@@ -21,6 +21,11 @@ export class PreloadScene extends Phaser.Scene {
      */
     preload() {
         this.load.json('enemies', 'data/enemies.json');
+
+        // 主菜单封面海报（作者：付冯金）——这是第一个"外部图片文件"，
+        // 用 load.image 读进来，等会儿在 MenuScene 里当整屏背景使用。
+        // 注意：路径是相对 index.html 的，所以文件必须放在 assets/cover.jpg。
+        this.load.image('cover', 'assets/cover.jpg');
     }
 
     /**
