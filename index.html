@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 让页面在手机上也能正常缩放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>妖兽传说 - HTML5网页游戏</title>
+    <!-- 页面背景色，避免加载时白屏 -->
+    <style>
+        /* 让游戏画布居中显示 */
+        body {
+            margin: 0;
+            padding: 0;
+            background: #1a1a2e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: "Microsoft YaHei", sans-serif;
+            overflow: hidden;
+        }
+        /* Phaser生成的canvas会自动插入这里 */
+        #game-container {
+            box-shadow: 0 0 40px rgba(0,0,0,0.6);
+        }
+    </style>
+</head>
+<body>
+    <!-- 游戏画布挂载点 -->
+    <div id="game-container"></div>
+
+    <!-- 
+        第1步：引入Phaser引擎（CDN方式，无需下载）
+        引入后，浏览器会自动创建一个全局变量 Phaser，后面的代码都可以直接用
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+
+    <!-- 
+        第2步：加载游戏主入口脚本
+        type="module" 表示支持 ES6 的 import/export 语法
+    -->
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+    "hp_potion_small": {
+        "name": "小型生命药水",
+        "type": "consumable",
+        "rarity": "common",
+        "icon": "item_hp_potion",
+        "description": "恢复 30 点生命值。",
+        "price": 20,
+        "effect": { "healHp": 30 }
+    },
+    "mp_potion_small": {
+        "name": "小型法力药水",
+        "type": "consumable",
+        "rarity": "common",
+        "icon": "item_mp_potion",
+        "description": "恢复 20 点法力值。",
+        "price": 25,
+        "effect": { "healMp": 20 }
+    },
+    "sword_iron": {
+        "name": "铁剑",
+        "type": "weapon",
+        "rarity": "common",
+        "icon": "item_sword_iron",
+        "description": "攻击力 +5 的普通铁剑。",
+        "price": 100,
+        "stats": { "attack": 5 }
+    }
+}

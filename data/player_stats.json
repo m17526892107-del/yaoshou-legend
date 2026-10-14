@@ -1,0 +1,19 @@
+{
+    "name": "主角",
+    "baseStats": {
+        "maxHp": 100,
+        "maxMp": 50,
+        "attack": 10,
+        "defense": 5,
+        "speed": 200,
+        "critRate": 0.05,
+        "critDamage": 1.5
+    },
+    "levelUpGrowth": {
+        "maxHp": 15,
+        "maxMp": 8,
+        "attack": 2,
+        "defense": 1
+    },
+    "expToNextFormula": "100 * level"
+}

@@ -1,0 +1,34 @@
+{
+    "slash": {
+        "name": "普通斩击",
+        "icon": "skill_slash",
+        "damage": 1.0,
+        "manaCost": 0,
+        "cooldown": 0.5,
+        "range": 60,
+        "type": "melee",
+        "description": "基础攻击，造成100%攻击力的伤害。"
+    },
+    "fireball": {
+        "name": "火球术",
+        "icon": "skill_fireball",
+        "damage": 1.8,
+        "manaCost": 15,
+        "cooldown": 3,
+        "range": 300,
+        "type": "ranged",
+        "element": "fire",
+        "description": "发射火球，造成180%攻击力的火焰伤害。"
+    },
+    "heal": {
+        "name": "治疗术",
+        "icon": "skill_heal",
+        "damage": 0,
+        "manaCost": 20,
+        "cooldown": 8,
+        "range": 0,
+        "type": "support",
+        "healAmount": 50,
+        "description": "恢复50点生命值。"
+    }
+}
